@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamForge AI | Question Paper Generator</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+<div class="app-layout">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-icon">
+                <i data-lucide="graduation-cap"></i>
+            </div>
+            <span>ExamForge<span class="brand-ai"> AI</span></span>
+        </div>
+
+        <div class="nav-label">WORKSPACE</div>
+
+        <nav class="navigation">
+            <a href="#" class="nav-item active">
+                <i data-lucide="layout-dashboard"></i>
+                Dashboard
+            </a>
+
+            <a href="#generator" class="nav-item">
+                <i data-lucide="file-plus"></i>
+                Create Paper
+            </a>
+
+            <a href="#preview" class="nav-item">
+                <i data-lucide="files"></i>
+                Paper Preview
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="help-card">
+                <div class="help-icon">
+                    <i data-lucide="lightbulb"></i>
+                </div>
+                <h4>Need help?</h4>
+                <p>Create your first AI-powered question paper in seconds.</p>
+                <a href="#generator">Get Started →</a>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">AI</div>
+                <div>
+                    <h4>AI Workspace</h4>
+                    <span>Student Edition</span>
+                </div>
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <div class="breadcrumb">Workspace / Dashboard</div>
+                <h2>Dashboard</h2>
+            </div>
+
+            <div class="topbar-right">
+                <div class="status">
+                    <span class="status-dot"></span>
+                    AI System Ready
+                </div>
+
+                <button class="icon-button" aria-label="Notifications">
+                    <i data-lucide="bell"></i>
+                </button>
+            </div>
+        </header>
+
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <i data-lucide="sparkles"></i>
+                    AI POWERED EDUCATION
+                </div>
+
+                <h1>Create Smarter.<br>
+                    <span>Exams Made Easier.</span>
+                </h1>
+
+                <p>
+                    Generate structured, high-quality question papers
+                    in seconds using artificial intelligence.
+                </p>
+
+                <a href="#generator" class="hero-button">
+                    Create Question Paper
+                    <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glow-circle"></div>
+
+                <div class="floating-card card-one">
+                    <i data-lucide="brain"></i>
+                    <span>AI Intelligence</span>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-top">
+                        <i data-lucide="file-text"></i>
+                        <span>QUESTION PAPER</span>
+                    </div>
+
+                    <div class="doc-line long"></div>
+                    <div class="doc-line medium"></div>
+                    <div class="doc-line short"></div>
+
+                    <div class="doc-question">
+                        <span>01</span>
+                        <div>
+                            <div class="doc-line medium"></div>
+                            <div class="doc-line short"></div>
+                        </div>
+                    </div>
+
+                    <div class="doc-question">
+                        <span>02</span>
+                        <div>
+                            <div class="doc-line long"></div>
+                            <div class="doc-line short"></div>
+                        </div>
+                    </div>
+
+                    <div class="document-footer">
+                        <span>Generated with AI</span>
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <i data-lucide="zap"></i>
+                    <span>Fast Generation</span>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- STATS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon purple">
+                    <i data-lucide="file-text"></i>
+                </div>
+                <div>
+                    <span>Total Papers</span>
+                    <h3>0</h3>
+                    <small>Your generated papers</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon cyan">
+                    <i data-lucide="download"></i>
+                </div>
+                <div>
+                    <span>Downloads</span>
+                    <h3>0</h3>
+                    <small>Exported documents</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <i data-lucide="sparkles"></i>
+                </div>
+                <div>
+                    <span>AI Engine</span>
+                    <h3>Ready</h3>
+                    <small>Waiting for your input</small>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- GENERATOR -->
+        <section class="generator-section" id="generator">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">AI QUESTION GENERATOR</span>
+                    <h2>Build Your Question Paper</h2>
+                    <p>Customize your exam requirements below.</p>
+                </div>
+
+                <div class="step-badge">
+                    <i data-lucide="settings-2"></i>
+                    Customize
+                </div>
+            </div>
+
+
+            <form id="paperForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="subject">Subject Name</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="book-open"></i>
+                            <input type="text" id="subject"
+                                placeholder="e.g. Data Structures" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="topic">Topics / Chapters</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="layers"></i>
+                            <input type="text" id="topic"
+                                placeholder="e.g. Stack, Queue, Linked List" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="marks">Total Marks</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="target"></i>
+                            <select id="marks" required>
+                                <option value="">Select marks</option>
+                                <option value="25">25 Marks</option>
+                                <option value="50">50 Marks</option>
+                                <option value="75">75 Marks</option>
+                                <option value="100">100 Marks</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficulty">Difficulty Level</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="gauge"></i>
+                            <select id="difficulty" required>
+                                <option value="">Select difficulty</option>
+                                <option value="Easy">Easy</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Hard">Hard</option>
+                                <option value="Mixed">Mixed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionType">Question Type</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="list-checks"></i>
+                            <select id="questionType">
+                                <option value="Mixed">Mixed Questions</option>
+                                <option value="MCQ">Multiple Choice</option>
+                                <option value="Short Answer">Short Answer</option>
+                                <option value="Long Answer">Long Answer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="questionCount">Number of Questions</label>
+                        <div class="input-wrapper">
+                            <i data-lucide="hash"></i>
+                            <input type="number" id="questionCount"
+                                min="1" max="100" value="10" required>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-footer">
+                    <div class="secure-note">
+                        <i data-lucide="shield-check"></i>
+                        Your content is processed securely.
+                    </div>
+
+                    <button type="submit" class="generate-button" id="generateBtn">
+                        <i data-lucide="sparkles"></i>
+                        Generate Question Paper
+                        <i data-lucide="arrow-right"></i>
+                    </button>
+                </div>
+
+            </form>
+
+        </section>
+
+
+        <!-- PREVIEW -->
+        <section class="preview-section" id="preview">
+
+            <div class="preview-heading">
+                <div>
+                    <span class="section-label">YOUR OUTPUT</span>
+                    <h2>Question Paper Preview</h2>
+                </div>
+
+                <div class="export-buttons">
+                    <button class="export-btn" data-format="txt">
+                        TXT
+                    </button>
+                    <button class="export-btn" data-format="pdf">
+                        PDF
+                    </button>
+                    <button class="export-btn" data-format="docx">
+                        DOCX
+                    </button>
+                </div>
+            </div>
+
+            <div class="preview-box" id="result">
+
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i data-lucide="file-plus-2"></i>
+                    </div>
+
+                    <h3>Your question paper will appear here</h3>
+
+                    <p>
+                        Fill in your requirements and click Generate
+                        Question Paper to get started.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 ExamForge AI. Built for smarter learning.</p>
+            <span>Powered by Artificial Intelligence ✨</span>
+        </footer>
+
+    </main>
+</div>
+
+<script src="/static/script.js"></script>
+<script>
+    lucide.createIcons();
+</script>
+
+</body>
+</html>
